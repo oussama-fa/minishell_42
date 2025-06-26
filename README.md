@@ -1,4 +1,4 @@
-# Minishell 🐚 - 42 School Project - 1337 KH
+# Minishell - 42 School Project - 1337 KH
 
 ![42 Project Badge](https://img.shields.io/badge/1337-Project-blue?style=for-the-badge&logo=42)
 ![GitHub code size](https://img.shields.io/github/languages/code-size/oussama-fa/minishell_42?style=flat-square)
@@ -15,15 +15,15 @@ Built from scratch to manage processes, parse and execute commands, handle redir
 It requires an in-depth understanding of Unix internals: from lexing and parsing shell input, to managing low-level system calls like `fork`, `execve`, `pipe`, and `dup2`.
 
 This project was developed in collaboration with [sbaghdad](https://github.com/lboghdadyy), where:
-- **Oussama FARAH** focused on **execution, redirections, pipes, signal handling, environment**, and memory management.
-- **Sbaghdad** handled **lexical analysis, parsing, syntax validation**, and argument expansion logic.
+- **Oussama FARAH/oufarah** focused on **execution, Built-in commands, pipes, environment, exit status**, and memory management.
+- **Soufiane Baghdadi/sbaghdad** handled **expand, parsing, redirections, signal handling, syntax validation**, and argument expansion logic.
 
 ---
 
 ## 🍀 Project Structure
-
+``` bash
 minishell/
-├── builtins/ # echo, cd, pwd, export, unset, env, exit
+├── builtins/ # echo with option -n, cd, pwd, export, unset, env, exit
 ├── exec/ # execution, piping, forking
 ├── lexer/ # tokenizing input
 ├── parser/ # syntax tree and command structure
@@ -31,8 +31,8 @@ minishell/
 ├── signals/ # signal handling
 ├── garbage/ # custom garbage collector
 ├── minishell.c # main shell loop
-└── libft/ # custom C standard library
-
+└── libft/ # custom C standard library same functions in libft
+```
 ---
 
 ## 📷 Screenshots
@@ -107,8 +107,7 @@ drwxr-xr-x 7 oufarah 2024_khouribga   119 Jun 26 16:47 .git
 -rw-r--r-- 1 oufarah 2024_khouribga  8517 Jun 26 16:27 minishell.h
 drwxr-xr-x 3 oufarah 2024_khouribga  4096 Jun 26 16:47 parse
 -rw-r--r-- 1 oufarah 2024_khouribga  2920 Jun 26 16:47 README.md
-this is heredoc
-EOF
+
 ```
 
 ---
@@ -131,27 +130,13 @@ EOF
 ---
 
 ## 🧩 Challenges
-**-**Writing a parser that correctly interprets complex shell syntax
+- Writing a parser that correctly interprets complex shell syntax
 
-**-**Forking and managing multiple processes with file descriptor safety
+- Forking and managing multiple processes with file descriptor safety
 
-**-**Managing memory leaks in dynamic command structures
+- Managing memory leaks in dynamic command structures
 
 ---
-## 🤝 Team Members
-
-👨‍💻 Oussama FARAH
-📱 Instagram
-
-✉️ oussama05farah@gmail.com
-
-💼 Execution Logic, Environment, Pipes, Signals, Redirections, Memory
-
-👨‍💻 Sbaghdad
-🧠 GitHub
-
-💼 Parsing, Lexing, Syntax Analysis, Variable Expansion, Command Tree
-
 ## 📜 Norm & Requirements
 ✅ 42 Norminette Compliant
 
@@ -161,6 +146,17 @@ EOF
 
 ✅ Behavior replicates Bash as much as possible
 
-```
+---
+
+## 🤝 Team Members
+
+*👨‍💻 Oussama FARAH*
+
+- ✉️ **Email**: [oussama05farah@gmail.com](mailto:oussama05farah@gmail.com)
+- 📱 **Instagram**: [@oussama._.farah](https://www.instagram.com/oussama._.farah/)
+
+*👨‍💻 Soufiane Baghdadi*
+
+- **Github**: [sbaghdad](https://github.com/lboghdadyy)
+
 <div align="center"> <h2>Welcome to your own shell! 🐚</h2> <h3>Type away and enjoy hacking the Unix world! 🚀</h3> </div> 
-```
