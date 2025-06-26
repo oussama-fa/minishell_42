@@ -1,8 +1,6 @@
 # Minishell - 42 School Project - 1337 KH
 
 ![42 Project Badge](https://img.shields.io/badge/1337-Project-blue?style=for-the-badge&logo=42)
-![GitHub code size](https://img.shields.io/github/languages/code-size/oussama-fa/minishell_42?style=flat-square)
-![GitHub last commit](https://img.shields.io/github/last-commit/oussama-fa/minishell_42?style=flat-square)
 
 A custom Unix shell written in C, replicating core features of Bash.  
 Built from scratch to manage processes, parse and execute commands, handle redirections, pipes, environment variables, and more.
